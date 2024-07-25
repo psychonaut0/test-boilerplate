@@ -19,8 +19,8 @@
     "*.{js,jsx,ts,tsx,json,css,scss,md}": [
       "prettier --write ."
     ],
-    "*.{ts,tsx}": [
-      "tsc --noEmit --jsx react-jsx --pretty --moduleResolution node -- module ESNext"
+    "**/*.{jsx,tsx}": [
+      "tsc --noEmit --jsx react-jsx --pretty --moduleResolution node --module ESNext"
     ]
   },
   "dependencies": {
